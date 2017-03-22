@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+/* Nav */
+.list-nav { line-height:22px; margin-bottom:15px; }
+.list-nav .page-nav { margin-top:4px; }
+@media all and (max-width:460px) {
+	.responsive .list-nav .page-nav { display:none; }
+}
+
+/* 카테고리 */
+.list-category { margin-bottom:20px; }
+.list-category .dropdown { margin-bottom:20px; }
+.list-category .active a, .list-category .selected a { color:crimson; font-weight:bold !important; }
+
+/* Sort */
+.list-sort { margin:15px 0px 20px; }
+.list-sort .on { font-weight:bold; color:crimson !important;}
+.list-sort .pull-left a, .list-sort .pull-right a { display:inline-block; margin:0px 10px; }
+
+/* 목록 */
+.list-wrap { width:100%; }
+.list-none { margin:0px 0px 15px; padding:80px 0px; }
+.list-page { margin-bottom:15px; }
+.list-page .pagination { margin:0; }
+.list-item .label-tack { padding-left:0px; line-height:12px; }
+.list-item .label-dc { color:orangered; text-align:right; font-weight:bold; font-style:italic; width:100%; margin:0px; padding:0px 10px; line-height:40px; height:40px; margin-top:-40px; font-size:32px; letter-spacing:-1px; position:relative; text-shadow: 0px 2px 1px rgba(0,0,0,0.7); }
+.list-item .label-dc-cur { color:orangered; text-align:right; font-weight:bold; font-style:italic; width:100%; margin:0px; padding:0px 10px; line-height:35px; height:75px; margin-top:-75px; font-size:32px; letter-spacing:-1px; position:relative; text-shadow: 0px 2px 1px rgba(0,0,0,0.7); }
+.list-item .label-dc-cur strike { color:#fff; line-height:20px; height:20px; font-size:20px; }
+.list-item .list-img { position:relative; overflow:hidden; }
+.list-item .list-img a img { width:100%; height:auto; }
+.list-item .list-content { margin:10px 3% 0px; }
+.list-item .list-star { padding:4px 0px 6px; line-height:22px; }
+.list-item strong { display:block; line-height:20px; margin-bottom:4px; text-align:center; }
+.list-item .list-desc { font-size:11px; line-height:18px; }
+.list-mobile .list-item .list-desc { font-size:13px; line-height:20px; }
+.list-item .list-details { margin-top:8px; }
+.list-item .list-details i { margin-right:2px; }
+.list-item .list-sns { margin-top:15px; text-align:center; }
+
+/* Responsive */
+@media all and (max-width:600px) {
+	.responsive .list-row { width:100% !important }
+}

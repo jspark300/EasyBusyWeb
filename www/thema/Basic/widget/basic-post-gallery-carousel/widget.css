@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+/* widget-basic-post-gallery-carousel */
+.widget-basic-post-gallery-carousel .item-wrap { overflow:hidden; }
+.widget-basic-post-gallery-carousel .item-row { float:left; }
+.widget-basic-post-gallery-carousel .item-caption { position:absolute; left:0; bottom:0; padding:6px 10px; line-height:20px; margin:0; width:100%; text-align:center; letter-spacing:-1px; }
+.widget-basic-post-gallery-carousel .item-details { font-size:13px; margin-top:8px; color:#aaa; text-align:center; }
+.widget-basic-post-gallery-carousel .item-details .sp { margin:0 6px; }
+.widget-basic-post-gallery-carousel .item-none { padding:50px 10px; }
+@media (max-width: 600px) { 
+	.responsive .widget-basic-post-gallery-carousel .item-row { width:100% !important } 
+}

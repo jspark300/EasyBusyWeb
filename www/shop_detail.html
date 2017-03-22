@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ALLYAll</title>
+	<link href="a_css/default.css" rel="stylesheet">
+	<link href="a_css/common.css" rel="stylesheet">
+	<script src="a_js/jquery-1.11.3.min.js"></script>
+	<script src="a_js/common.js"></script>
+	<link rel="stylesheet" href="a_css/swiper.min.css">
+	<script src="a_js/swiper.min.js"></script>
+</head>
+<body>
+	<header class="header1">
+		<div class="d1">
+			<h1><a href="index.html"><img src="images/logo.png" alt="ALLYALL"></a></h1>
+			<nav>
+				<ul class="btn_wrap">
+					<li><a href="search.html" class="search">검색</a></li>
+					<li><a href="locate.html" class="locate">위치</a></li>
+					<li><a href="my_index.html" class="menu">메뉴</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="search_wrap1 dp_none">
+			<p><input type="search" placeholder="검색어 입력"></p> <a href="#1">검색</a>
+		</div>
+	</header>
+	<header class="header2">
+		<div class="btn_back"><a href="shop_list.html"></a></div>
+		<div class="txt_tit">
+			<p>뉴욕바닷가재 청담본점</p>
+		</div>
+		<div class="btn_right">
+			<a href="#1" class="regular">단골</a>
+			<!--a href="#1" class="a2">단골</a-->
+		</div>
+	</header>
+	<section class="shop_map">
+		<div class="d2">
+			<img src="images/temp_map.jpg" alt="">
+		</div>
+	</section>
+	<section class="slide_gallery">
+		<div>
+			<ul>
+				<li><img src="images/temp_shop_d01.jpg" alt=""></li>
+				<li><img src="images/temp_shop_d02.jpg" alt=""></li>
+				<li><img src="images/temp_shop_d03.jpg" alt=""></li>
+				<li><img src="images/temp_shop_d04.jpg" alt=""></li>
+				<li><img src="images/temp_shop_d05.jpg" alt=""></li>
+				<li><img src="images/temp_shop_d06.jpg" alt=""></li>
+			</ul>
+		</div>
+		<a href="#prev" class="prev">이전</a>
+		<a href="#next" class="next">다음</a>
+	</section>
+	<section class="shop_detail">
+		<h2>경품</h2>
+		<ul class="u1">
+			<li>
+				<dl>
+					<dt>
+						<p><img src="images/temp_c1_g1.jpg" alt=""></p>
+					</dt>
+					<dd>
+						<p><span class="tit">바닷가재찜 구매권</span> <span>(55,000원)</span></p>
+						<p>- 응모마감 : <strong>2015.10.22</strong></p>
+						<p>- 현재 응모자수 : <strong>30</strong> (전체 : 100)</p>
+						<p class="btn"><a href="shop_entry.html">응모하기</a></p>
+						<!--p class="btn"><a href="shop_entry.html">응모중</a></p-->
+						<!--2015.07.19에 이미 응모하셨습니다-->
+					</dd>
+				</dl>
+			</li>			
+		</ul>
+		<p class="btn_more"><a href="#1">지난 경품 보기</a></p>
+		<div class="btn_wrap">
+			<ul>
+				<li><a href="shop_sns.html">공유</a></li>
+				<li><a href="shop_eval.html">평가</a></li>
+				<li><a href="shop_menu.html">메뉴</a></li>
+				<li><a href="regist_shopinfo.html">수정</a></li>
+			</ul>
+		</div>
+	</section>
+	<section class="shop_info">
+		<h2>업체정보</h2>
+		<div class="d1">
+			<p class="exp">
+				현지 캐나다 바닷가에서 맛볼수있는 바닷가재의 참맛과 신선함을 그대로 제공함을 최우선의 경영 원칙으로 하는 바닷가재요리 전문점입니다.
+			</p>
+		</div>
+		<div class="cb">
+			<ul class="fl">
+				<li class="exp1">
+					<p class="distance">0.5km</p>
+					<p class="favor">51</p>
+					<!--p><strong>바로주문가능</strong></p-->
+				</li>				
+			</ul>
+			<ul class="fr">
+				<li><a href="#1" onclick="alert('아름다운 대한민국');"><img src="images/btn_sns_kt.png" alt="kakao talk"></a></li>
+				<li><a href="#1"><img src="images/btn_sns_ks.png" alt="kakao story"></a></li>
+				<li><a href="#1"><img src="images/btn_sns_fb.png" alt="facebook"></a></li>
+				<li><a href="#1"><img src="images/btn_sns_tw.png" alt="twitter"></a></li>
+			</ul>
+		</div>
+		<style>
+			#modalContainer {
+				background-color:rgba(0, 0, 0, 0.3);
+				position:absolute;
+				width:100%;
+				height:100%;
+				top:0px;
+				left:0px;
+				z-index:10000;
+				background-image:url(tp.png); /* required by MSIE to prevent actions on lower z-index elements */
+			}
+
+			#alertBox {
+				position:relative;
+				width:300px;
+				min-height:100px;
+				margin-top:50px;
+				border:1px solid #666;
+				background-color:#fff;
+				background-repeat:no-repeat;
+				background-position:20px 30px;
+			}
+
+			#modalContainer > #alertBox {
+				position:fixed;
+			}
+
+			#alertBox h1 {
+				margin:0;
+				font-size:16px;
+				background-color:#3073BB;
+				color:#FFF;
+				border-bottom:1px solid #000;
+				padding:2px 0 2px 5px;
+			}
+
+			#alertBox p {
+				font-size:14px;
+				height:50px;
+				padding-left:5px;
+				margin-left:55px;
+			}
+
+			#alertBox #closeBtn {
+				display:block;
+				position:relative;
+				margin:5px auto;
+				padding:7px;
+				border:0 none;
+				width:70px;
+				font-size:14px;
+				text-transform:uppercase;
+				text-align:center;
+				color:#FFF;
+				background-color:#357EBD;
+				border-radius: 3px;
+				text-decoration:none;
+			}
+
+			/* unrelated styles */
+
+			#mContainer {
+				position:relative;
+				width:600px;
+				margin:auto;
+				padding:5px;
+				border-top:2px solid #000;
+				border-bottom:2px solid #000;
+				font:0.7em verdana,arial;
+			}
+
+			#credits {
+				position:relative;
+				margin:25px auto 0px auto;
+				width:350px; 
+				font-size:14px;
+				border-top:1px solid #000;
+				border-bottom:1px solid #000;
+				height:90px;
+				padding-top:4px;
+			}
+
+			#credits img {
+				float:left;
+				margin:5px 10px 5px 0px;
+				border:1px solid #000000;
+				width:80px;
+				height:79px;
+			}
+
+			.important {
+				background-color:#F5FCC8;
+				padding:2px;
+			}
+		</style>
+		<script type="text/javascript">
+var ALERT_TITLE = "ALLYALL";
+var ALERT_BUTTON_TEXT = "확인";
+
+if(document.getElementById) {
+	window.alert = function(txt) {
+		createCustomAlert(txt);
+	}
+}
+
+function createCustomAlert(txt) {
+	d = document;
+
+	if(d.getElementById("modalContainer")) return;
+
+	mObj = d.getElementsByTagName("body")[0].appendChild(d.createElement("div"));
+	mObj.id = "modalContainer";
+	mObj.style.height = d.documentElement.scrollHeight + "px";
+	
+	alertObj = mObj.appendChild(d.createElement("div"));
+	alertObj.id = "alertBox";
+	/*if(d.all && !window.opera)*/ alertObj.style.top = document.documentElement.scrollTop + "px";
+	alertObj.style.left = (d.documentElement.scrollWidth - alertObj.offsetWidth)/2 + "px";
+	alertObj.style.visiblity="visible";
+
+	h1 = alertObj.appendChild(d.createElement("h1"));
+	h1.appendChild(d.createTextNode(ALERT_TITLE));
+
+	msg = alertObj.appendChild(d.createElement("p"));
+	//msg.appendChild(d.createTextNode(txt));
+	msg.innerHTML = txt;
+
+	btn = alertObj.appendChild(d.createElement("a"));
+	btn.id = "closeBtn";
+	btn.appendChild(d.createTextNode(ALERT_BUTTON_TEXT));
+	btn.href = "#";
+	btn.focus();
+	btn.onclick = function() { removeCustomAlert();return false; }
+
+	alertObj.style.display = "block";
+	
+}
+
+function removeCustomAlert() {
+	document.getElementsByTagName("body")[0].removeChild(document.getElementById("modalContainer"));
+}
+		</script>
+		<ul>
+			<li class="eval">
+				<dl>
+					<dt><span class="e5"><i></i></span><strong>4.8점</strong></dt>
+					<dd>
+						<p><span class="e5"><!--i></i--></span> <em class="on">맛집</em> 4.5</p>
+						<p><span class="e3"><!--i></i--></span> <em>신속</em> 3.0</p>
+						<p><span class="e5"><!--i></i--></span> <em class="on">친절</em> 5.0</p>
+						<p><span class="e5"><!--i></i--></span> <em class="on">청결</em> 5.0</p>
+						<div><strong>132명 참여</strong> (5.0만점)</div>
+					</dd>
+				</dl>
+			</li>
+			<li class="exp2">
+				<dl>
+					<dt>주소</dt><dd>서울 강남구 선릉로152길 5 이성빌딩</dd>
+				</dl>
+				<dl>
+					<dt>전화번호</dt><dd>02-547-0023</dd>
+				</dl>
+				<dl>
+					<dt>매장정보</dt>
+					<dd>
+						<p>영업시간 : 상시(월~일) 11:00 ~ 23:00</p>
+						<p>좌석정보 : 80석, 방 10개</p>
+						<p>수용인원 : 80 명</p>
+						<p>연중무휴</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>홈페이지</dt><dd>http://www.lobsterok.co.kr</dd>
+				</dl>
+			</li>
+		</ul>
+	</section>
+</body>
+</html>

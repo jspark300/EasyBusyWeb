@@ -1,0 +1,3 @@
+<iframe src="http://www.tudou.com/programs/view/html5embed.action?type=0&code=LZvLtClrV_U&lcode=&resourceId=833713497_06_05_99&autoplay=true" allowtransparency="true" allowfullscreen="true" allowfullscreenInteractive="true" scrolling="no" border="0" frameborder="0" style="width:480px;height:400px;"></iframe>
+
+<embed src="http://www.tudou.com/v/xAzZIEFNH8w/&bid=05&rpid=833713497&resourceId=833713497_05_05_99/v.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="opaque" width="480" height="400"></embed>
